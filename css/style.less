@@ -1,0 +1,30 @@
+@import "_var";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: @os;
+	color: @gray;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1110px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.section {
+	&--intro {
+		background: url('../img/bg.jpg') no-repeat center;
+		background-size: cover;
+	}
+}
+
+@import "sections/_header";

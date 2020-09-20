@@ -1,0 +1,38 @@
+
+@import "../_var";
+
+
+.header {
+	padding: 20px 0;
+	background-color: #000;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}
+
+.nav {
+	&__link {
+		margin-left: 50px;
+
+		text-decoration: none;
+		color: @white;
+		font-weight: 700;
+		font-size: 16px;
+
+		opacity: .7;
+		transition: opacity .2 linear;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+
