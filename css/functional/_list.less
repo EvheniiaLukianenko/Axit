@@ -1,0 +1,37 @@
+@import "_var";
+
+.list {
+	margin-top: 40px;
+	margin-left: 0;
+	padding-left: 0;
+
+	&__item{
+		list-style-type: none;
+		margin-bottom: 30px;
+		padding-left: 70px;
+		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&__image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+
+	&__title {
+		font-family: @os;
+		font-weight: 700;
+		color: @black_light;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		font-family: @os;
+		color: @gray;
+	}
+}

@@ -1,0 +1,49 @@
+@import "_var";
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: @white;
+	border-radius: 3px;
+	overflow: hidden;
+
+	&--intro {
+		width: 360px;
+	}
+
+	&__legend {
+		width: 100%;
+		height: fit-content;
+		padding: 15px;
+		margin-bottom: 25px;
+		background-color: @form_gray;
+		border-radius: 5px;
+		
+		text-align: center;
+		font-family: @os;
+		font-weight: 700;
+		font-size: 20px;
+		color: @ground;
+
+		span {
+			color: @orange;
+		}
+	}
+
+	&__input {
+		width: 280px;
+		height: fit-content;
+		margin: 0 auto 45px;
+		padding: 10px 15px;
+
+		border: none;
+		border-bottom: 1px solid #d6d6d6;
+
+		&::-webkit-input-placeholder {
+			color:#bdbdbd;
+		    font-family: @os;
+			font-size: 14px;
+		}
+		
+	}
+}

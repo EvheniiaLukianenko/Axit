@@ -1,0 +1,59 @@
+@import "_var";
+
+.tabs {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.tab {
+	width: 65%;
+	display: flex;
+	justify-content: space-between;
+
+	&__col {
+		width: 110px;
+		margin-right: 100px;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&__block {
+		width: 100%;
+		height: 110px;
+		border-bottom: 1px solid @white;
+		background-color: @ground;
+
+		display: flex;
+		justify-content: center;
+    	align-items: center;
+
+    	transition: background .2s linear;
+
+		&:last-child {
+			border-bottom: none;
+		}
+
+		&:hover {
+			background-color: @orange;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		
+		font-size: 16px;
+		font-weight: 700;
+		color: @white;
+	}
+
+	&__item {
+		width: 70%;
+	}
+
+	&__image {
+	max-width: 35%;
+	height: auto;
+	}
+}
+

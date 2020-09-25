@@ -1,0 +1,28 @@
+@import "_var";
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 20px 0;
+
+	&__links {
+		display: flex;
+		align-items: center;
+	}
+	
+	&__link {
+		margin-left: 55px;
+		text-decoration: none;
+		font-size: 42px;
+		color: @gray_light;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:hover {
+			color: @orange;
+		}
+	}
+}
