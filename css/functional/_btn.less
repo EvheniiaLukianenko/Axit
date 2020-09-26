@@ -33,6 +33,12 @@
 		&:hover {
 			background-color: @orange;
 		}
+
+		&--contact {
+			display: inline-block;
+			width: 150px;
+			border-radius: 3px;
+		}
 	}
 	
 	&--tabs {
@@ -45,6 +51,16 @@
 		&:hover {
 			background-color: @orange;
 		}
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&__wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 }

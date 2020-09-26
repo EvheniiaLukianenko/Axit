@@ -1,0 +1,55 @@
+@import "_var";
+
+.reviews {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	&__item {
+		width: 27%;
+	}
+
+	&__text {
+		width: 100%;
+		padding: 20px 10px;
+		background-color: @form_gray;
+		margin-bottom: 40px;
+
+		position: relative;
+
+		font-style: italic;
+
+		&:after {
+			position: absolute;
+			content: "";
+	
+			width: 0;
+			height: 0;
+			border: 15px solid;
+			border-color: @form_gray transparent transparent @form_gray;
+
+			top: 100%;
+			left: 10%;
+			z-index: 1;
+		}
+	}
+
+	&__author {
+		position: relative;
+		padding: 15px 10px 15px 85px;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 20px;
+		color: @ground;
+		margin-bottom: 5px;
+	}
+}

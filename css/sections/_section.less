@@ -11,8 +11,12 @@
 	}
 
 	&--gray {
-		padding: 120px 0;
 		background-color: @form_gray;
+	}
+
+	&--download {
+		background: @black url('../img/bg1.jpg') center no-repeat;
+		background-size: cover;
 	}
 
 	&__content {
@@ -24,6 +28,10 @@
 		&--big {
 			text-align: center;
 			margin-bottom: 75px;
+		}
+
+		&--white {
+			text-align: center;
 		}
 	}
 
@@ -48,6 +56,10 @@
 				border-radius: 2px;
 				background-color: @orange;
 			}
+
+			&--white&:after{
+				background-color: @white;
+			}
 		}
 
 		&--big {
@@ -59,6 +71,10 @@
 			&:after {
 				margin: 30px auto;
 			}
+
+			&--white {
+				color: @white;
+			}
 		}
 	}
 
@@ -69,6 +85,15 @@
 		&--small {
 			font-size: 14px;
 			margin-bottom: 25px;
+		}
+
+		&--white {
+			margin-bottom: 30px;
+			font-family: @raleway;
+			font-weight: 300;
+			font-size: 16px;
+			color: @white;
+			opacity: .8;
 		}
 	}
 }

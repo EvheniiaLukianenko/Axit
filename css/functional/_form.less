@@ -11,6 +11,11 @@
 		width: 360px;
 	}
 
+	&--contact {
+		width: 100%;
+		justify-content: center;
+	}
+
 	&__legend {
 		width: 100%;
 		height: fit-content;
@@ -31,19 +36,42 @@
 	}
 
 	&__input {
-		width: 280px;
-		height: fit-content;
 		margin: 0 auto 45px;
 		padding: 10px 15px;
 
 		border: none;
 		border-bottom: 1px solid #d6d6d6;
 
+		&--intro {
+			width: 280px;
+			height: fit-content;
+		}
+
+		&--contact {
+			width: 100%;
+		}
+
 		&::-webkit-input-placeholder {
 			color:#bdbdbd;
 		    font-family: @os;
 			font-size: 14px;
 		}
+
+		&:focus {
+			outline: none;
+		}
 		
+	}
+
+	&__textarea {
+		width: 47%;
+		min-height: 200px;
+		margin: 0 0 45px 30px;
+		resize: none;
+	}
+
+	&__wrapper {
+		width: 47%;
+		margin-right: 30px;
 	}
 }
